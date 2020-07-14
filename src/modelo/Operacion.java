@@ -61,5 +61,10 @@ public class Operacion {
                 break;
         }
     }
+
+    public void clear() {
+        this.op1 = this.op2 = this.result = 0.0;
+        this.operator = ' ';
+    }
     
 }

@@ -50,6 +50,8 @@ public class CalcVista extends javax.swing.JFrame {
         btnRestar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Simple Calculator MVC");
+        setResizable(false);
 
         btn1.setText("1");
         btn1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -264,26 +266,26 @@ public class CalcVista extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn0;
-    private javax.swing.JButton btn1;
-    private javax.swing.JButton btn2;
-    private javax.swing.JButton btn3;
-    private javax.swing.JButton btn4;
-    private javax.swing.JButton btn5;
-    private javax.swing.JButton btn6;
-    private javax.swing.JButton btn7;
-    private javax.swing.JButton btn8;
-    private javax.swing.JButton btn9;
-    private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnDividir;
-    private javax.swing.JButton btnHistorial;
-    private javax.swing.JButton btnIgual;
-    private javax.swing.JButton btnMultiplicar;
-    private javax.swing.JButton btnPunto;
-    private javax.swing.JButton btnRestar;
-    private javax.swing.JButton btnSumar;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton no;
-    private javax.swing.JTextField txtDisplay;
+    public javax.swing.JButton btn0;
+    public javax.swing.JButton btn1;
+    public javax.swing.JButton btn2;
+    public javax.swing.JButton btn3;
+    public javax.swing.JButton btn4;
+    public javax.swing.JButton btn5;
+    public javax.swing.JButton btn6;
+    public javax.swing.JButton btn7;
+    public javax.swing.JButton btn8;
+    public javax.swing.JButton btn9;
+    public javax.swing.JButton btnClear;
+    public javax.swing.JButton btnDividir;
+    public javax.swing.JButton btnHistorial;
+    public javax.swing.JButton btnIgual;
+    public javax.swing.JButton btnMultiplicar;
+    public javax.swing.JButton btnPunto;
+    public javax.swing.JButton btnRestar;
+    public javax.swing.JButton btnSumar;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JButton no;
+    public javax.swing.JTextField txtDisplay;
     // End of variables declaration//GEN-END:variables
 }
