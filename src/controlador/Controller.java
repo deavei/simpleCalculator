@@ -126,7 +126,17 @@ public class Controller implements ActionListener{
             this.operacion.setOp2(Double.valueOf(this.vista.txtDisplay.getText()));
             this.operacion.execute();
             this.vista.txtDisplay.setText(String.valueOf(this.operacion.getResult()));
+            
+            //Al cacular la operacion  se guarda la misma en la db.
+            operacion.save();
+            
         }
+        
+        if(e.getSource().equals(this.vista.btnHistorial)){
+            operacion.listarHistorial();
+        
+        }
+        
         if(e.getSource().equals(this.vista.btnClear)){
             this.operacion.clear();
             this.vista.txtDisplay.setText("");

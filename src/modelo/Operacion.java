@@ -1,11 +1,14 @@
 
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author DavidC
  */
 public class Operacion {
+    private Historial historial = null;
     
     private double op1, op2, result;
     private char operator;
@@ -13,6 +16,7 @@ public class Operacion {
     public Operacion(){
         op1 = op2 = result = 0.0;
         operator = ' ';
+        historial = new Historial();
     }
 
     public double getOp1() {
@@ -65,6 +69,19 @@ public class Operacion {
     public void clear() {
         this.op1 = this.op2 = this.result = 0.0;
         this.operator = ' ';
+    }
+
+    public void save() {
+        historial.addToHistorial(this);
+    }
+
+    public void listarHistorial() {
+        ArrayList listado = historial.getListado();
+        
+        for(int i = 0; i < listado.size(); i++){
+            System.out.println((String)listado.get(i));
+        }
+        
     }
     
 }
